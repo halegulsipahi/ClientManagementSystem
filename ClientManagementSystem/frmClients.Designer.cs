@@ -288,6 +288,7 @@
             this.btnReset.TabIndex = 4;
             this.btnReset.Text = "RESET";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnList
             // 
@@ -345,6 +346,7 @@
             this.dgDatas.RowTemplate.Height = 24;
             this.dgDatas.Size = new System.Drawing.Size(954, 259);
             this.dgDatas.TabIndex = 21;
+            this.dgDatas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDatas_CellClick);
             // 
             // lblTime
             // 
