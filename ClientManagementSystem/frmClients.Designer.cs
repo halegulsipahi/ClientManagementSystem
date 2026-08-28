@@ -55,28 +55,29 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.dgvClients = new System.Windows.Forms.DataGridView();
+            this.dgDatas = new System.Windows.Forms.DataGridView();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.pbCalender = new System.Windows.Forms.PictureBox();
             this.gbClientInfo.SuspendLayout();
             this.gbOperations.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDatas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCalender)).BeginInit();
             this.SuspendLayout();
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(133, 45);
+            this.txtId.Location = new System.Drawing.Point(137, 45);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(209, 27);
+            this.txtId.Size = new System.Drawing.Size(269, 27);
             this.txtId.TabIndex = 0;
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(96, 49);
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblId.Location = new System.Drawing.Point(100, 49);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(31, 20);
             this.lblId.TabIndex = 1;
@@ -85,7 +86,8 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(69, 82);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblName.Location = new System.Drawing.Point(73, 82);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(58, 20);
             this.lblName.TabIndex = 3;
@@ -93,15 +95,16 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(133, 78);
+            this.txtName.Location = new System.Drawing.Point(137, 78);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(209, 27);
+            this.txtName.Size = new System.Drawing.Size(269, 27);
             this.txtName.TabIndex = 2;
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(46, 115);
+            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSurname.Location = new System.Drawing.Point(50, 115);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(81, 20);
             this.lblSurname.TabIndex = 5;
@@ -109,15 +112,16 @@
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(133, 111);
+            this.txtSurname.Location = new System.Drawing.Point(137, 111);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(209, 27);
+            this.txtSurname.Size = new System.Drawing.Size(269, 27);
             this.txtSurname.TabIndex = 4;
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(84, 148);
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAge.Location = new System.Drawing.Point(88, 148);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(43, 20);
             this.lblAge.TabIndex = 7;
@@ -125,15 +129,16 @@
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(133, 144);
+            this.txtAge.Location = new System.Drawing.Point(137, 144);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(209, 27);
+            this.txtAge.Size = new System.Drawing.Size(269, 27);
             this.txtAge.TabIndex = 6;
             // 
             // lblNationalId
             // 
             this.lblNationalId.AutoSize = true;
-            this.lblNationalId.Location = new System.Drawing.Point(30, 181);
+            this.lblNationalId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblNationalId.Location = new System.Drawing.Point(34, 181);
             this.lblNationalId.Name = "lblNationalId";
             this.lblNationalId.Size = new System.Drawing.Size(97, 20);
             this.lblNationalId.TabIndex = 9;
@@ -141,15 +146,16 @@
             // 
             // txtNationalId
             // 
-            this.txtNationalId.Location = new System.Drawing.Point(133, 177);
+            this.txtNationalId.Location = new System.Drawing.Point(137, 177);
             this.txtNationalId.Name = "txtNationalId";
-            this.txtNationalId.Size = new System.Drawing.Size(209, 27);
+            this.txtNationalId.Size = new System.Drawing.Size(269, 27);
             this.txtNationalId.TabIndex = 8;
             // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(66, 214);
+            this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPhone.Location = new System.Drawing.Point(70, 214);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(61, 20);
             this.lblPhone.TabIndex = 11;
@@ -158,7 +164,8 @@
             // lblMaritalStatus
             // 
             this.lblMaritalStatus.AutoSize = true;
-            this.lblMaritalStatus.Location = new System.Drawing.Point(9, 247);
+            this.lblMaritalStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMaritalStatus.Location = new System.Drawing.Point(13, 247);
             this.lblMaritalStatus.Name = "lblMaritalStatus";
             this.lblMaritalStatus.Size = new System.Drawing.Size(118, 20);
             this.lblMaritalStatus.TabIndex = 13;
@@ -167,7 +174,8 @@
             // lblJob
             // 
             this.lblJob.AutoSize = true;
-            this.lblJob.Location = new System.Drawing.Point(86, 280);
+            this.lblJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblJob.Location = new System.Drawing.Point(90, 280);
             this.lblJob.Name = "lblJob";
             this.lblJob.Size = new System.Drawing.Size(41, 20);
             this.lblJob.TabIndex = 15;
@@ -175,15 +183,16 @@
             // 
             // txtJob
             // 
-            this.txtJob.Location = new System.Drawing.Point(133, 276);
+            this.txtJob.Location = new System.Drawing.Point(137, 276);
             this.txtJob.Name = "txtJob";
-            this.txtJob.Size = new System.Drawing.Size(209, 27);
+            this.txtJob.Size = new System.Drawing.Size(269, 27);
             this.txtJob.TabIndex = 14;
             // 
             // lblCity
             // 
             this.lblCity.AutoSize = true;
-            this.lblCity.Location = new System.Drawing.Point(84, 313);
+            this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCity.Location = new System.Drawing.Point(88, 313);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(43, 20);
             this.lblCity.TabIndex = 17;
@@ -191,16 +200,16 @@
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(133, 309);
+            this.txtCity.Location = new System.Drawing.Point(137, 309);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(209, 27);
+            this.txtCity.Size = new System.Drawing.Size(269, 27);
             this.txtCity.TabIndex = 16;
             // 
             // mtxtPhone
             // 
-            this.mtxtPhone.Location = new System.Drawing.Point(133, 210);
+            this.mtxtPhone.Location = new System.Drawing.Point(137, 210);
             this.mtxtPhone.Name = "mtxtPhone";
-            this.mtxtPhone.Size = new System.Drawing.Size(209, 27);
+            this.mtxtPhone.Size = new System.Drawing.Size(269, 27);
             this.mtxtPhone.TabIndex = 18;
             // 
             // gbClientInfo
@@ -227,7 +236,7 @@
             this.gbClientInfo.Controls.Add(this.txtNationalId);
             this.gbClientInfo.Location = new System.Drawing.Point(12, 12);
             this.gbClientInfo.Name = "gbClientInfo";
-            this.gbClientInfo.Size = new System.Drawing.Size(369, 361);
+            this.gbClientInfo.Size = new System.Drawing.Size(446, 361);
             this.gbClientInfo.TabIndex = 19;
             this.gbClientInfo.TabStop = false;
             this.gbClientInfo.Text = "Client Information";
@@ -235,7 +244,7 @@
             // rbSingle
             // 
             this.rbSingle.AutoSize = true;
-            this.rbSingle.Location = new System.Drawing.Point(249, 247);
+            this.rbSingle.Location = new System.Drawing.Point(293, 245);
             this.rbSingle.Name = "rbSingle";
             this.rbSingle.Size = new System.Drawing.Size(76, 24);
             this.rbSingle.TabIndex = 20;
@@ -246,7 +255,7 @@
             // rbMarried
             // 
             this.rbMarried.AutoSize = true;
-            this.rbMarried.Location = new System.Drawing.Point(156, 247);
+            this.rbMarried.Location = new System.Drawing.Point(165, 245);
             this.rbMarried.Name = "rbMarried";
             this.rbMarried.Size = new System.Drawing.Size(87, 24);
             this.rbMarried.TabIndex = 19;
@@ -262,9 +271,9 @@
             this.gbOperations.Controls.Add(this.btnUpdate);
             this.gbOperations.Controls.Add(this.btnDelete);
             this.gbOperations.Controls.Add(this.btnAdd);
-            this.gbOperations.Location = new System.Drawing.Point(387, 12);
+            this.gbOperations.Location = new System.Drawing.Point(479, 12);
             this.gbOperations.Name = "gbOperations";
-            this.gbOperations.Size = new System.Drawing.Size(211, 361);
+            this.gbOperations.Size = new System.Drawing.Size(239, 361);
             this.gbOperations.TabIndex = 20;
             this.gbOperations.TabStop = false;
             this.gbOperations.Text = "Operations";
@@ -275,7 +284,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnReset.Location = new System.Drawing.Point(6, 297);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(199, 40);
+            this.btnReset.Size = new System.Drawing.Size(227, 40);
             this.btnReset.TabIndex = 4;
             this.btnReset.Text = "RESET";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -286,7 +295,7 @@
             this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnList.Location = new System.Drawing.Point(6, 235);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(199, 40);
+            this.btnList.Size = new System.Drawing.Size(227, 40);
             this.btnList.TabIndex = 3;
             this.btnList.Text = "LIST";
             this.btnList.UseVisualStyleBackColor = false;
@@ -297,7 +306,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUpdate.Location = new System.Drawing.Point(6, 173);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(199, 40);
+            this.btnUpdate.Size = new System.Drawing.Size(227, 40);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -308,7 +317,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDelete.Location = new System.Drawing.Point(6, 111);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(199, 40);
+            this.btnDelete.Size = new System.Drawing.Size(227, 40);
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -319,21 +328,23 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAdd.Location = new System.Drawing.Point(6, 49);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(199, 40);
+            this.btnAdd.Size = new System.Drawing.Size(227, 40);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // dgvClients
+            // dgDatas
             // 
-            this.dgvClients.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClients.Location = new System.Drawing.Point(12, 379);
-            this.dgvClients.Name = "dgvClients";
-            this.dgvClients.RowHeadersWidth = 51;
-            this.dgvClients.RowTemplate.Height = 24;
-            this.dgvClients.Size = new System.Drawing.Size(792, 190);
-            this.dgvClients.TabIndex = 21;
+            this.dgDatas.AllowUserToAddRows = false;
+            this.dgDatas.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dgDatas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgDatas.Location = new System.Drawing.Point(12, 379);
+            this.dgDatas.Name = "dgDatas";
+            this.dgDatas.ReadOnly = true;
+            this.dgDatas.RowHeadersWidth = 51;
+            this.dgDatas.RowTemplate.Height = 24;
+            this.dgDatas.Size = new System.Drawing.Size(954, 259);
+            this.dgDatas.TabIndex = 21;
             // 
             // lblTime
             // 
@@ -341,7 +352,7 @@
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
             this.lblTime.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTime.ForeColor = System.Drawing.Color.Red;
-            this.lblTime.Location = new System.Drawing.Point(652, 74);
+            this.lblTime.Location = new System.Drawing.Point(813, 74);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(104, 27);
             this.lblTime.TabIndex = 23;
@@ -353,7 +364,7 @@
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblDate.ForeColor = System.Drawing.Color.Red;
-            this.lblDate.Location = new System.Drawing.Point(640, 43);
+            this.lblDate.Location = new System.Drawing.Point(801, 43);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(128, 27);
             this.lblDate.TabIndex = 22;
@@ -363,9 +374,9 @@
             // 
             this.pbCalender.BackColor = System.Drawing.Color.Transparent;
             this.pbCalender.Image = ((System.Drawing.Image)(resources.GetObject("pbCalender.Image")));
-            this.pbCalender.Location = new System.Drawing.Point(604, 105);
+            this.pbCalender.Location = new System.Drawing.Point(764, 136);
             this.pbCalender.Name = "pbCalender";
-            this.pbCalender.Size = new System.Drawing.Size(200, 213);
+            this.pbCalender.Size = new System.Drawing.Size(202, 213);
             this.pbCalender.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCalender.TabIndex = 24;
             this.pbCalender.TabStop = false;
@@ -376,11 +387,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(808, 581);
+            this.ClientSize = new System.Drawing.Size(976, 650);
             this.Controls.Add(this.pbCalender);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.dgvClients);
+            this.Controls.Add(this.dgDatas);
             this.Controls.Add(this.gbOperations);
             this.Controls.Add(this.gbClientInfo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -394,7 +405,7 @@
             this.gbClientInfo.ResumeLayout(false);
             this.gbClientInfo.PerformLayout();
             this.gbOperations.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDatas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCalender)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -427,7 +438,7 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.DataGridView dgvClients;
+        private System.Windows.Forms.DataGridView dgDatas;
         private System.Windows.Forms.RadioButton rbSingle;
         private System.Windows.Forms.RadioButton rbMarried;
         private System.Windows.Forms.Label lblTime;
