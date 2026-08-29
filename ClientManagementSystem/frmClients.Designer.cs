@@ -236,7 +236,7 @@
             this.gbClientInfo.Controls.Add(this.txtNationalId);
             this.gbClientInfo.Location = new System.Drawing.Point(12, 12);
             this.gbClientInfo.Name = "gbClientInfo";
-            this.gbClientInfo.Size = new System.Drawing.Size(446, 361);
+            this.gbClientInfo.Size = new System.Drawing.Size(443, 361);
             this.gbClientInfo.TabIndex = 19;
             this.gbClientInfo.TabStop = false;
             this.gbClientInfo.Text = "Client Information";
@@ -300,6 +300,7 @@
             this.btnList.TabIndex = 3;
             this.btnList.Text = "LIST";
             this.btnList.UseVisualStyleBackColor = false;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnUpdate
             // 
@@ -333,6 +334,7 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dgDatas
             // 

@@ -23,16 +23,8 @@ namespace ClientManagementSystem
             lblDate.Text = DateTime.Now.ToShortDateString();
             lblTime.Text = DateTime.Now.ToLongTimeString();
         }
-
-        private void frmClients_Load(object sender, EventArgs e)
+        void List()
         {
-
-            Timer timer = new Timer();
-            timer.Interval = 1000;
-
-            timer.Tick += Timer_Tick;
-            timer.Start();
-
             connection.Open();
 
             string query = "select * from Clients";
@@ -42,6 +34,18 @@ namespace ClientManagementSystem
             adapter.Fill(dt);
 
             dgDatas.DataSource = dt;
+            connection.Close();
+        }
+        private void frmClients_Load(object sender, EventArgs e)
+        {
+
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+
+            timer.Tick += Timer_Tick;
+            timer.Start();
+
+            List();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -52,6 +56,7 @@ namespace ClientManagementSystem
 
         private void dgDatas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            connection.Open();
             var id = dgDatas.Rows[e.RowIndex].Cells[0].Value;
 
             string query = "select * from Clients where Id=@id";
@@ -81,8 +86,9 @@ namespace ClientManagementSystem
                 {
                     rbSingle.Checked = true;
                 }
-                
+
             }
+            connection.Close();
 
         }
 
@@ -98,6 +104,45 @@ namespace ClientManagementSystem
             txtCity.Clear();
             rbMarried.Checked = false;
             rbSingle.Checked = false;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string name = txtName.Text;
+            string surname = txtSurname.Text;
+            string age = txtAge.Text;
+            string nationalId = txtNationalId.Text;
+            string phone = mtxtPhone.Text;
+            string job = txtJob.Text;
+            string city = txtCity.Text;
+            bool maritalStatus = rbMarried.Checked;
+
+            connection.Open();
+
+            string query = "insert into Clients (Name,Surname,Age,NationalId,Phone,MaritalStatus,Job,City) values ( @Name,@Surname,@Age,@NationalId,@Phone,@MaritalStatus,@Job,@City)";
+
+
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@Name",name);
+            cmd.Parameters.AddWithValue("@Surname", surname);
+            cmd.Parameters.AddWithValue("@Age", age);
+            cmd.Parameters.AddWithValue("@NationalId", nationalId);
+            cmd.Parameters.AddWithValue("@Phone", phone);
+            cmd.Parameters.AddWithValue("@MaritalStatus", maritalStatus);
+            cmd.Parameters.AddWithValue("@Job", job);
+            cmd.Parameters.AddWithValue("@City", city);
+
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("SUCCESSFULLY ADDED!");
+            connection.Close();
+
+            List();
+
+        }
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            List();
         }
     }
 }
