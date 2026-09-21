@@ -38,6 +38,10 @@ A desktop-based CRUD management application developed with **C# Windows Forms**,
 Create a database named `ClientsDB` in SSMS and execute the table schema below:
 
 ```sql
+CREATE DATABASE ClientsDB;
+GO
+USE ClientsDB;
+GO
 CREATE TABLE Clients (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Name VARCHAR(50) NOT NULL,
