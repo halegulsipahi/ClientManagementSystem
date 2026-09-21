@@ -15,7 +15,7 @@ namespace ClientManagementSystem
     {
         //Data Source = LAPTOP - 3790I1BK\SQLEXPRESS;Initial Catalog = ClientsDB; Integrated Security = True; Encrypt=False
 
-        SqlConnection connection = new SqlConnection(@"Data Source=LAPTOP-3790I1BK\SQLEXPRESS;Initial Catalog=ClientsDB;Integrated Security=True;Encrypt=False");
+        SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=ClientsDB;Integrated Security=True;Encrypt=False");
         public frmClients()
         {
 
